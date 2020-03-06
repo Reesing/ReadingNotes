@@ -8,13 +8,13 @@
 
 - Ingredients for success in active management:
 
-  1. a recognition of the challenge: it is difficult.
+    - a recognition of the challenge: it is difficult.
 
-  2. it is an economic investigation: 
+    - it is an economic investigation: 
 
-    + we can never repeat an experiment, and
+        + we can never repeat an experiment, and
 
-    + we actually affect the transaction prices.
+        + we actually affect the transaction prices.
 
 The Fundamental Law:
 
