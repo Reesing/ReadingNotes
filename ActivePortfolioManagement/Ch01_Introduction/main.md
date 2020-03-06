@@ -6,4 +6,4 @@ Quantitative active management is a cousin of the modern financial economics.
 
 We look to the academy for structure and insight, NOT for solutions.
 
-$`IR = IC \dot \sqrt{breadth}`$
+$$IR = IC \dot \sqrt{breadth}$$
