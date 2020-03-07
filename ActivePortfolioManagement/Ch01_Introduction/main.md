@@ -62,7 +62,7 @@
     - Forecasting : **raw signals of asset returns** -> **refined forecasts**
     - Basic insight : relate [ **a standardized (zero mean and unit standard deviation) score** ] to [ **a forecast of residual return (an alpha)** ].
      
-<center><a href="https://www.codecogs.com/eqnedit.php?latex=\textup{Alpha}&space;=&space;\textup{volatility}&space;\cdot&space;\textup{IC}\cdot\textup{score}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{Alpha}&space;=&space;\textup{volatility}&space;\cdot&space;\textup{IC}\cdot\textup{score}" title="\textup{Alpha} = \textup{volatility} \cdot \textup{IC}\cdot\textup{score}" /></a></center>
+    <a href="https://www.codecogs.com/eqnedit.php?latex=\textup{Alpha}&space;=&space;\textup{volatility}&space;\cdot&space;\textup{IC}\cdot\textup{score}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{Alpha}&space;=&space;\textup{volatility}&space;\cdot&space;\textup{IC}\cdot\textup{score}" title="\textup{Alpha} = \textup{volatility} \cdot \textup{IC}\cdot\textup{score}" /></a>
 
 - The book does not guarantee success in investment management. It only helps to process the garbage more effectively.
 
