@@ -54,7 +54,7 @@
 
 - The Fundamental Law:
 
-<center><a href="https://www.codecogs.com/eqnedit.php?latex=\textup{IR}=\textup{IC}\cdot\sqrt{\textup{breadth}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{IR}=\textup{IC}\cdot\sqrt{\textup{breadth}}" title="\textup{IR}=\textup{IC}\cdot\sqrt{\textup{breadth}}" /></a></center>
+    <a href="https://www.codecogs.com/eqnedit.php?latex=\textup{IR}=\textup{IC}\cdot\sqrt{\textup{breadth}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{IR}=\textup{IC}\cdot\sqrt{\textup{breadth}}" title="\textup{IR}=\textup{IC}\cdot\sqrt{\textup{breadth}}" /></a>
 
 - Betting on the market's direction does not provide much breadth -> lack of enthusiasm for benchmark timing strategies.
 
