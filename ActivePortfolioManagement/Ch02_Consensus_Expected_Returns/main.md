@@ -101,8 +101,23 @@
 
 ### Mathematical Notation
 
-Argument Type | Notaion | Example
-:-:|:-:|:-:
-scalar | plain text | <a href="https://www.codecogs.com/eqnedit.php?latex=a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a" title="a" /></a>
-vector | bold lowercase letter | <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}" title="\mathbf{h}" /></a>
-matrix | bold uppercase letter | <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{V}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{V}" title="\mathbf{V}" /></a>
+- In general
+
+    Type | Notaion | Example
+    :-:|:-:|:-:
+    scalar | plain text | <a href="https://www.codecogs.com/eqnedit.php?latex=a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a" title="a" /></a>
+    vector | bold lowercase letter | <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}" title="\mathbf{h}" /></a>
+    matrix | bold uppercase letter | <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{V}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{V}" title="\mathbf{V}" /></a>
+
+- Specifically
+
+    Letter | Type | Meaning | Comments
+    :-:|:-:|:-:|:-:
+    <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}" title="\mathbf{h}" /></a> | vector | risky asset **holdings** | a portfolio's weights in each asset
+    <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{f}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{f}" title="\mathbf{f}" /></a> | vector | **expected excess returns** | -
+    <a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{\mu}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\mu}" title="\boldsymbol{\mu}" /></a>| vector | **expected excess returns *under CAPM*** | CAPM holds when <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{f}&space;=&space;\boldsymbol{\mu}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{f}&space;=&space;\boldsymbol{\mu}" title="\mathbf{f} = \boldsymbol{\mu}" /></a>
+    <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{V}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{V}" title="\mathbf{V}" /></a> | matrix | **covariance matrix of excess returns**</br>for the risky assets | assumed nonsingular
+    <a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{\beta}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\beta}" title="\boldsymbol{\beta}" /></a>| vector | asset betas | -
+    <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{e}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{e}" title="\mathbf{e}" /></a>| vector | ones | <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{e}=\left&space;[&space;1,1,...,1&space;\right&space;]^T" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{e}=\left&space;[&space;1,1,...,1&space;\right&space;]^T" title="\mathbf{e}=\left [ 1,1,...,1 \right ]^T" /></a> </br><a href="https://www.codecogs.com/eqnedit.php?latex=e_n&space;=1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e_n&space;=1" title="e_n =1" /></a>
+
+### Assumptions
