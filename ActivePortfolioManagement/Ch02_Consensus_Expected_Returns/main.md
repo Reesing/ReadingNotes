@@ -63,7 +63,7 @@
     - All investors have the same expectations.
     - They differ only in their *tolerance for risk*.
 
-- Main conclusion:
+- Main conclusions:
     - Under the CAPM, the **expected residual return** on any stock or portfolio is zero. 
 
         <a href="https://www.codecogs.com/eqnedit.php?latex=\textup{E}\[\theta_P\]=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{E}\[\theta_P\]=0" title="\textup{E}\[\theta_P\]=0" /></a>
@@ -73,4 +73,36 @@
 
         <a href="https://www.codecogs.com/eqnedit.php?latex=\textup{E}\[r_P\]=\mu_P=\beta_P\textup{E}\[r_M\]=\beta_P\mu_M" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{E}\[r_P\]=\mu_P=\beta_P\textup{E}\[r_M\]=\beta_P\mu_M" title="\textup{E}\[r_P\]=\mu_P=\beta_P\textup{E}\[r_M\]=\beta_P\mu_M" /></a>
 
-## The CAPM Is Sensible
+## The CAPM is Sensible
+
+- Investors are compensated for taking necessary risks, not for unnecessary risks.
+    - Market risk is in escapable.
+    - All investors can avoid residual risk.
+
+- Investors who don't think they have superior information should hold the market portfolio.
+
+## The CAPM and Efficient Markets Theory
+
+- Three strengths: weak, semistrong, strong.
+
+## Relevance for Active Managers
+
+- CAPM is based on not quite accurate assumptions.
+
+- There is no need to forecast the expected excess market return if you control beta.
+
+- The manager can focus on forecasting residual returns.
+
+- CAPM helps the active manager to 
+    - avoid the risk of **market timing**
+    - focus on **residual returns** that have a consensus expectation of zero.
+
+## Technical Appendix
+
+### Mathematical Notation
+
+Argument Type | Notaion | Example
+:-:|:-:|:-:
+scalar | plain text | <a href="https://www.codecogs.com/eqnedit.php?latex=a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a" title="a" /></a>
+vector | bold lowercase letter | <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}" title="\mathbf{h}" /></a>
+matrix | bold uppercase letter | <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{V}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{V}" title="\mathbf{V}" /></a>
