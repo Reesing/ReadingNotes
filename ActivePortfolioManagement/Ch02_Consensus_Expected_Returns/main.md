@@ -121,3 +121,84 @@
     <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{e}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{e}" title="\mathbf{e}" /></a>| vector | ones | <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{e}=\left&space;[&space;1,1,...,1&space;\right&space;]^T" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{e}=\left&space;[&space;1,1,...,1&space;\right&space;]^T" title="\mathbf{e}=\left [ 1,1,...,1 \right ]^T" /></a> </br><a href="https://www.codecogs.com/eqnedit.php?latex=e_n&space;=1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e_n&space;=1" title="e_n =1" /></a>
 
 ### Assumptions
+
++ Consider a single period with *no rebalancing* of the portfolio within the period.
+
+- Underlying assumptions:
+    - A **risk-free asset** exsits.
+    - All first and second moments exsit.
+    - It is not possible to build **a fully invested portfolio that has zero risk**.
+    - The **expected excess return on portfolio C** is positive.
+        - Portfolio C is the fully invested portfolio with minimum risk.
+
+
+### Characteristic Portfolios
+
+- We associate a **characteristic portfolio** with each asset **attribute**.
+    - The characteristic porfolio **uniquely** capture the defining attribute.
+    - **Reversibly**, we can start with a portfolio and find the attribute this portfolio expresses most effectively.
+
+- Let 
+
+    <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{a}=\left&space;\[&space;a_1,a_2,...,a_N&space;\right&space;\]^T" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{a}=\left&space;\[&space;a_1,a_2,...,a_N&space;\right&space;\]^T" title="\mathbf{a}=\left \[ a_1,a_2,...,a_N \right \]^T" /></a>
+
+    be any vector of asset **attributes/characteristics**.
+
+    The exposure of portfolio <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}_P" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}_P" title="\mathbf{h}_P" /></a> to attribute <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{a}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{a}" title="\mathbf{a}" /></a>  is 
+   
+    <a href="https://www.codecogs.com/eqnedit.php?latex=a_P&space;=&space;\sum_{n=1}^N&space;a_nh_{P,n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a_P&space;=&space;\sum_{n=1}^N&space;a_nh_{P,n}" title="a_P = \sum_{n=1}^N a_nh_{P,n}" /></a>
+
+- Proposition 1
+
+    1. **Defination of *Characteristic Portfolio***:
+    
+        For any attribute 
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\large&space;a\neq&space;0" target="_blank"><img src="https://latex.codecogs.com/png.latex?\inline&space;\large&space;a\neq&space;0" title="\large a\neq 0" /></a> ,
+        
+        there is a **unique** characteristic portfolio 
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\large&space;\mathbf{h}_a&space;=&space;\frac{\mathbf{V}^{-1}\mathbf{a}}{\mathbf{a}^T\mathbf{V}^{-1}\mathbf{a}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\large&space;\mathbf{h}_a&space;=&space;\frac{\mathbf{V}^{-1}\mathbf{a}}{\mathbf{a}^T\mathbf{V}^{-1}\mathbf{a}}" title="\large \mathbf{h}_a = \frac{\mathbf{V}^{-1}\mathbf{a}}{\mathbf{a}^T\mathbf{V}^{-1}\mathbf{a}}" /></a>
+
+        that has **minimum risk** and **unit exposure** to 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\large&space;a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\large&space;a" title="\large a" /></a> .
+
+        - Characteristic portfolio are not necessarily fully invested.
+        - They can include long and short positions and have significant leverage.
+    
+        **Proof :**
+
+        We derive the holdings of characteristic portfolio by solving the optimization problem:
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{matrix}&space;\min_{\mathbf{h}}&space;\,\,\sigma_{\mathbf{h}}^2&space;=&space;\mathbf{h}^T\mathbf{Vh}\\&space;\textup{s.t.}\,&space;\,&space;\mathbf{h}^T\mathbf{a}=1&space;\end{matrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{matrix}&space;\min_{\mathbf{h}}&space;\,\,\sigma_{\mathbf{h}}^2&space;=&space;\mathbf{h}^T\mathbf{Vh}\\&space;\textup{s.t.}\,&space;\,&space;\mathbf{h}^T\mathbf{a}=1&space;\end{matrix}" title="\begin{matrix} \min_{\mathbf{h}} \,\,\sigma_{\mathbf{h}}^2 = \mathbf{h}^T\mathbf{Vh}\\ \textup{s.t.}\, \, \mathbf{h}^T\mathbf{a}=1 \end{matrix}" /></a>
+
+        An important equation resulting from the optimization is:
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{Vh}_a=\sigma_a^2\mathbf{a}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{Vh}_a=\sigma_a^2\mathbf{a}" title="\mathbf{Vh}_a=\sigma_a^2\mathbf{a}" /></a>
+    
+    2. The variance of the charateristic portfolio is
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma_a^2=\mathbf{h}_a^T\mathbf{Vh}_a=\frac{1}{\mathbf{a}^T\mathbf{V}^{-1}\mathbf{a}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sigma_a^2=\mathbf{h}_a^T\mathbf{Vh}_a=\frac{1}{\mathbf{a}^T\mathbf{V}^{-1}\mathbf{a}}" title="\sigma_a^2=\mathbf{h}_a^T\mathbf{Vh}_a=\frac{1}{\mathbf{a}^T\mathbf{V}^{-1}\mathbf{a}}" /></a>
+
+    3. The beta of all assets with respect to portfolio 
+    <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\mathbf{h}_a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\mathbf{h}_a" title="\mathbf{h}_a" /></a> 
+    is equal to 
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\mathbf{a}=\frac{\mathbf{Vh}_a}{\sigma_a^2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\mathbf{a}=\frac{\mathbf{Vh}_a}{\sigma_a^2}" title="\mathbf{a}=\frac{\mathbf{Vh}_a}{\sigma_a^2}" /></a>
+
+
+        **Proof :**
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{V}=\begin{bmatrix}&space;\sigma_{11}&space;&&space;\sigma_{12}&space;&&space;\cdots&space;&&space;\sigma_{1N}\\&space;\sigma_{21}&space;&&space;\sigma_{22}&space;&&space;\cdots&space;&&space;\sigma_{2N}\\&space;\vdots&space;&&space;\vdots&space;&&space;\ddots&space;&&space;\vdots\\&space;\sigma_{N1}&space;&&space;\sigma_{N2}&space;&&space;\cdots&space;&&space;\sigma_{NN}&space;\end{bmatrix}&space;,&space;\,\,\mathbf{h}=\begin{bmatrix}&space;h_1\\&space;h_2\\&space;\vdots&space;\\&space;h_N&space;\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{V}=\begin{bmatrix}&space;\sigma_{11}&space;&&space;\sigma_{12}&space;&&space;\cdots&space;&&space;\sigma_{1N}\\&space;\sigma_{21}&space;&&space;\sigma_{22}&space;&&space;\cdots&space;&&space;\sigma_{2N}\\&space;\vdots&space;&&space;\vdots&space;&&space;\ddots&space;&&space;\vdots\\&space;\sigma_{N1}&space;&&space;\sigma_{N2}&space;&&space;\cdots&space;&&space;\sigma_{NN}&space;\end{bmatrix}&space;,&space;\,\,\mathbf{h}=\begin{bmatrix}&space;h_1\\&space;h_2\\&space;\vdots&space;\\&space;h_N&space;\end{bmatrix}" title="\mathbf{V}=\begin{bmatrix} \sigma_{11} & \sigma_{12} & \cdots & \sigma_{1N}\\ \sigma_{21} & \sigma_{22} & \cdots & \sigma_{2N}\\ \vdots & \vdots & \ddots & \vdots\\ \sigma_{N1} & \sigma_{N2} & \cdots & \sigma_{NN} \end{bmatrix} , \,\,\mathbf{h}=\begin{bmatrix} h_1\\ h_2\\ \vdots \\ h_N \end{bmatrix}" /></a> 
+
+        Thus,
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{Vh}&=\begin{bmatrix}&space;\sigma_{11}&space;&&space;\sigma_{12}&space;&&space;\cdots&space;&&space;\sigma_{1N}\\&space;\sigma_{21}&space;&&space;\sigma_{22}&space;&&space;\cdots&space;&&space;\sigma_{2N}\\&space;\vdots&space;&&space;\vdots&space;&&space;\ddots&space;&&space;\vdots\\&space;\sigma_{N1}&space;&&space;\sigma_{N2}&space;&&space;\cdots&space;&&space;\sigma_{NN}&space;\end{bmatrix}&space;\begin{bmatrix}&space;h_1\\&space;h_2\\&space;\vdots&space;\\&space;h_N&space;\end{bmatrix}&space;=&space;\begin{bmatrix}&space;\sigma_{11}h_1&plus;\sigma_{12}h_2&plus;\cdots&plus;\sigma_{1N}h_N\\&space;\sigma_{21}h_1&plus;\sigma_{22}h_2&plus;\cdots&plus;\sigma_{2N}h_N\\&space;\vdots&space;\\&space;\sigma_{N1}h_1&plus;\sigma_{N2}h_2&plus;\cdots&plus;\sigma_{NN}h_N&space;\end{bmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{Vh}&=\begin{bmatrix}&space;\sigma_{11}&space;&&space;\sigma_{12}&space;&&space;\cdots&space;&&space;\sigma_{1N}\\&space;\sigma_{21}&space;&&space;\sigma_{22}&space;&&space;\cdots&space;&&space;\sigma_{2N}\\&space;\vdots&space;&&space;\vdots&space;&&space;\ddots&space;&&space;\vdots\\&space;\sigma_{N1}&space;&&space;\sigma_{N2}&space;&&space;\cdots&space;&&space;\sigma_{NN}&space;\end{bmatrix}&space;\begin{bmatrix}&space;h_1\\&space;h_2\\&space;\vdots&space;\\&space;h_N&space;\end{bmatrix}&space;=&space;\begin{bmatrix}&space;\sigma_{11}h_1&plus;\sigma_{12}h_2&plus;\cdots&plus;\sigma_{1N}h_N\\&space;\sigma_{21}h_1&plus;\sigma_{22}h_2&plus;\cdots&plus;\sigma_{2N}h_N\\&space;\vdots&space;\\&space;\sigma_{N1}h_1&plus;\sigma_{N2}h_2&plus;\cdots&plus;\sigma_{NN}h_N&space;\end{bmatrix}" title="\mathbf{Vh}&=\begin{bmatrix} \sigma_{11} & \sigma_{12} & \cdots & \sigma_{1N}\\ \sigma_{21} & \sigma_{22} & \cdots & \sigma_{2N}\\ \vdots & \vdots & \ddots & \vdots\\ \sigma_{N1} & \sigma_{N2} & \cdots & \sigma_{NN} \end{bmatrix} \begin{bmatrix} h_1\\ h_2\\ \vdots \\ h_N \end{bmatrix} = \begin{bmatrix} \sigma_{11}h_1+\sigma_{12}h_2+\cdots+\sigma_{1N}h_N\\ \sigma_{21}h_1+\sigma_{22}h_2+\cdots+\sigma_{2N}h_N\\ \vdots \\ \sigma_{N1}h_1+\sigma_{N2}h_2+\cdots+\sigma_{NN}h_N \end{bmatrix}" /></a>
+
+        In other hand,
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\textup{Cov}\left&space;(r_i,r_{\mathbf{h}_a}&space;\right&space;)=\textup{Cov}\left&space;(r_i,\sum_{n=1}^Nh_nr_n&space;\right&space;)=\sum_{n=1}^N\textup{Cov}\left(&space;r_i,r_n&space;\right)h_n=\sum_{n=1}^N\sigma_{in}h_n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{Cov}\left&space;(r_i,r_{\mathbf{h}_a}&space;\right&space;)=\textup{Cov}\left&space;(r_i,\sum_{n=1}^Nh_nr_n&space;\right&space;)=\sum_{n=1}^N\textup{Cov}\left(&space;r_i,r_n&space;\right)h_n=\sum_{n=1}^N\sigma_{in}h_n" title="\textup{Cov}\left (r_i,r_{\mathbf{h}_a} \right )=\textup{Cov}\left (r_i,\sum_{n=1}^Nh_nr_n \right )=\sum_{n=1}^N\textup{Cov}\left( r_i,r_n \right)h_n=\sum_{n=1}^N\sigma_{in}h_n" /></a>
+
+        Therefore,
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{\beta}&space;=&space;\begin{bmatrix}&space;\beta_1\\&space;\beta_2\\&space;\vdots\\&space;\beta_N&space;\end{bmatrix}=&space;\begin{bmatrix}&space;\frac{\textup{Cov}\left&space;(&space;r_1,r_{\mathbf{h}_a}&space;\right&space;)}{\textup{Var}\left&space;(&space;r_{\mathbf{h}_a}&space;\right&space;)}\\&space;\frac{\textup{Cov}\left&space;(&space;r_2,r_{\mathbf{h}_a}&space;\right&space;)}{\textup{Var}\left&space;(&space;r_{\mathbf{h}_a}&space;\right&space;)}\\&space;\vdots\\&space;\frac{\textup{Cov}\left&space;(&space;r_N,r_{\mathbf{h}_a}&space;\right&space;)}{\textup{Var}\left&space;(&space;r_{\mathbf{h}_a}&space;\right&space;)}&space;\end{bmatrix}&space;=&space;\frac{1}{\sigma_a^2}\begin{bmatrix}&space;\sum_{n=1}^N\sigma_{1n}h_n\\&space;\sum_{n=1}^N\sigma_{2n}h_n\\&space;\vdots\\&space;\sum_{n=1}^N\sigma_{Nn}h_n&space;\end{bmatrix}&space;=\frac{\mathbf{Vh}}{\sigma_a^2}=\mathbf{a}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\beta}&space;=&space;\begin{bmatrix}&space;\beta_1\\&space;\beta_2\\&space;\vdots\\&space;\beta_N&space;\end{bmatrix}=&space;\begin{bmatrix}&space;\frac{\textup{Cov}\left&space;(&space;r_1,r_{\mathbf{h}_a}&space;\right&space;)}{\textup{Var}\left&space;(&space;r_{\mathbf{h}_a}&space;\right&space;)}\\&space;\frac{\textup{Cov}\left&space;(&space;r_2,r_{\mathbf{h}_a}&space;\right&space;)}{\textup{Var}\left&space;(&space;r_{\mathbf{h}_a}&space;\right&space;)}\\&space;\vdots\\&space;\frac{\textup{Cov}\left&space;(&space;r_N,r_{\mathbf{h}_a}&space;\right&space;)}{\textup{Var}\left&space;(&space;r_{\mathbf{h}_a}&space;\right&space;)}&space;\end{bmatrix}&space;=&space;\frac{1}{\sigma_a^2}\begin{bmatrix}&space;\sum_{n=1}^N\sigma_{1n}h_n\\&space;\sum_{n=1}^N\sigma_{2n}h_n\\&space;\vdots\\&space;\sum_{n=1}^N\sigma_{Nn}h_n&space;\end{bmatrix}&space;=\frac{\mathbf{Vh}}{\sigma_a^2}=\mathbf{a}" title="\boldsymbol{\beta} = \begin{bmatrix} \beta_1\\ \beta_2\\ \vdots\\ \beta_N \end{bmatrix}= \begin{bmatrix} \frac{\textup{Cov}\left ( r_1,r_{\mathbf{h}_a} \right )}{\textup{Var}\left ( r_{\mathbf{h}_a} \right )}\\ \frac{\textup{Cov}\left ( r_2,r_{\mathbf{h}_a} \right )}{\textup{Var}\left ( r_{\mathbf{h}_a} \right )}\\ \vdots\\ \frac{\textup{Cov}\left ( r_N,r_{\mathbf{h}_a} \right )}{\textup{Var}\left ( r_{\mathbf{h}_a} \right )} \end{bmatrix} = \frac{1}{\sigma_a^2}\begin{bmatrix} \sum_{n=1}^N\sigma_{1n}h_n\\ \sum_{n=1}^N\sigma_{2n}h_n\\ \vdots\\ \sum_{n=1}^N\sigma_{Nn}h_n \end{bmatrix} =\frac{\mathbf{Vh}}{\sigma_a^2}=\mathbf{a}" /></a>
