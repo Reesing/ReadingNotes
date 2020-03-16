@@ -202,3 +202,51 @@
         Therefore,
 
         <a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{\beta}&space;=&space;\begin{bmatrix}&space;\beta_1\\&space;\beta_2\\&space;\vdots\\&space;\beta_N&space;\end{bmatrix}=&space;\begin{bmatrix}&space;\frac{\textup{Cov}\left&space;(&space;r_1,r_{\mathbf{h}_a}&space;\right&space;)}{\textup{Var}\left&space;(&space;r_{\mathbf{h}_a}&space;\right&space;)}\\&space;\frac{\textup{Cov}\left&space;(&space;r_2,r_{\mathbf{h}_a}&space;\right&space;)}{\textup{Var}\left&space;(&space;r_{\mathbf{h}_a}&space;\right&space;)}\\&space;\vdots\\&space;\frac{\textup{Cov}\left&space;(&space;r_N,r_{\mathbf{h}_a}&space;\right&space;)}{\textup{Var}\left&space;(&space;r_{\mathbf{h}_a}&space;\right&space;)}&space;\end{bmatrix}&space;=&space;\frac{1}{\sigma_a^2}\begin{bmatrix}&space;\sum_{n=1}^N\sigma_{1n}h_n\\&space;\sum_{n=1}^N\sigma_{2n}h_n\\&space;\vdots\\&space;\sum_{n=1}^N\sigma_{Nn}h_n&space;\end{bmatrix}&space;=\frac{\mathbf{Vh}}{\sigma_a^2}=\mathbf{a}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\beta}&space;=&space;\begin{bmatrix}&space;\beta_1\\&space;\beta_2\\&space;\vdots\\&space;\beta_N&space;\end{bmatrix}=&space;\begin{bmatrix}&space;\frac{\textup{Cov}\left&space;(&space;r_1,r_{\mathbf{h}_a}&space;\right&space;)}{\textup{Var}\left&space;(&space;r_{\mathbf{h}_a}&space;\right&space;)}\\&space;\frac{\textup{Cov}\left&space;(&space;r_2,r_{\mathbf{h}_a}&space;\right&space;)}{\textup{Var}\left&space;(&space;r_{\mathbf{h}_a}&space;\right&space;)}\\&space;\vdots\\&space;\frac{\textup{Cov}\left&space;(&space;r_N,r_{\mathbf{h}_a}&space;\right&space;)}{\textup{Var}\left&space;(&space;r_{\mathbf{h}_a}&space;\right&space;)}&space;\end{bmatrix}&space;=&space;\frac{1}{\sigma_a^2}\begin{bmatrix}&space;\sum_{n=1}^N\sigma_{1n}h_n\\&space;\sum_{n=1}^N\sigma_{2n}h_n\\&space;\vdots\\&space;\sum_{n=1}^N\sigma_{Nn}h_n&space;\end{bmatrix}&space;=\frac{\mathbf{Vh}}{\sigma_a^2}=\mathbf{a}" title="\boldsymbol{\beta} = \begin{bmatrix} \beta_1\\ \beta_2\\ \vdots\\ \beta_N \end{bmatrix}= \begin{bmatrix} \frac{\textup{Cov}\left ( r_1,r_{\mathbf{h}_a} \right )}{\textup{Var}\left ( r_{\mathbf{h}_a} \right )}\\ \frac{\textup{Cov}\left ( r_2,r_{\mathbf{h}_a} \right )}{\textup{Var}\left ( r_{\mathbf{h}_a} \right )}\\ \vdots\\ \frac{\textup{Cov}\left ( r_N,r_{\mathbf{h}_a} \right )}{\textup{Var}\left ( r_{\mathbf{h}_a} \right )} \end{bmatrix} = \frac{1}{\sigma_a^2}\begin{bmatrix} \sum_{n=1}^N\sigma_{1n}h_n\\ \sum_{n=1}^N\sigma_{2n}h_n\\ \vdots\\ \sum_{n=1}^N\sigma_{Nn}h_n \end{bmatrix} =\frac{\mathbf{Vh}}{\sigma_a^2}=\mathbf{a}" /></a>
+
+    4. Two attributes 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a" title="a" /></a>
+        and 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=d" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d" title="d" /></a>
+        with characteristic portfolio 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}_a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}_a" title="\mathbf{h}_a" /></a>
+        and 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}_d" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}_d" title="\mathbf{h}_d" /></a>
+
+        Let
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=a_d=\mathbf{a}^T\mathbf{h}_d" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a_d=\mathbf{a}^T\mathbf{h}_d" title="a_d=\mathbf{a}^T\mathbf{h}_d" /></a>
+         , i.e. exposure of portfolio 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}_d" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}_d" title="\mathbf{h}_d" /></a>
+        on 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a" title="a" /></a>
+         , and
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=d_a=\mathbf{d}^T\mathbf{h}_a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d_a=\mathbf{d}^T\mathbf{h}_a" title="d_a=\mathbf{d}^T\mathbf{h}_a" /></a>
+         , i.e. exposure of portfolio 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}_a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}_a" title="\mathbf{h}_a" /></a>
+        on 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=d" target="_blank"><img src="https://latex.codecogs.com/gif.latex?d" title="d" /></a> .
+
+        Then the covariance of the two characteristic portfolio satisfies
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma_{a,d}=a_d\sigma_a^2=d_a\sigma_d^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sigma_{a,d}=a_d\sigma_a^2=d_a\sigma_d^2" title="\sigma_{a,d}=a_d\sigma_a^2=d_a\sigma_d^2" /></a>
+
+    5. If 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\kappa&space;>0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\kappa&space;>0" title="\kappa >0" /></a>
+        is a positive scalar, then the characteristic portfolio of 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\kappa&space;a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\kappa&space;a" title="\kappa a" /></a>
+        is
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}_a/&space;\kappa" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}_a/&space;\kappa" title="\mathbf{h}_a/ \kappa" /></a> .
+    
+    6. If 
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=a=\kappa_dd&plus;\kappa_ff" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a=\kappa_dd&plus;\kappa_ff" title="a=\kappa_dd+\kappa_ff" /></a>
+
+        then
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}_a=\sigma_a^2\left&space;(\frac{\kappa_d}{\sigma_d^2}&space;\mathbf{h}_d&space;&plus;&space;\frac{\kappa_f}{\sigma_f^2}&space;\mathbf{h}_f&space;\right&space;)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}_a=\sigma_a^2\left&space;(\frac{\kappa_d}{\sigma_d^2}&space;\mathbf{h}_d&space;&plus;&space;\frac{\kappa_f}{\sigma_f^2}&space;\mathbf{h}_f&space;\right&space;)" title="\mathbf{h}_a=\sigma_a^2\left (\frac{\kappa_d}{\sigma_d^2} \mathbf{h}_d + \frac{\kappa_f}{\sigma_f^2} \mathbf{h}_f \right )" /></a>
+
+        where
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{1}{\sigma_a^2}=\frac{\kappa_da_d}{\sigma_d^2}&space;&plus;&space;\frac{\kappa_fa_f}{\sigma_f^2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{1}{\sigma_a^2}=\frac{\kappa_da_d}{\sigma_d^2}&space;&plus;&space;\frac{\kappa_fa_f}{\sigma_f^2}" title="\frac{1}{\sigma_a^2}=\frac{\kappa_da_d}{\sigma_d^2} + \frac{\kappa_fa_f}{\sigma_f^2}" /></a>
+
