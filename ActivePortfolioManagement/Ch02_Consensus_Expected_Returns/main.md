@@ -249,4 +249,173 @@
         where
 
         <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{1}{\sigma_a^2}=\frac{\kappa_da_d}{\sigma_d^2}&space;&plus;&space;\frac{\kappa_fa_f}{\sigma_f^2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{1}{\sigma_a^2}=\frac{\kappa_da_d}{\sigma_d^2}&space;&plus;&space;\frac{\kappa_fa_f}{\sigma_f^2}" title="\frac{1}{\sigma_a^2}=\frac{\kappa_da_d}{\sigma_d^2} + \frac{\kappa_fa_f}{\sigma_f^2}" /></a>
+    
+- Examples
+    - **Portfolio C**
+
+        Attribute : 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{e}=[1,1,\cdots,1]^T" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{e}=[1,1,\cdots,1]^T" title="\mathbf{e}=[1,1,\cdots,1]^T" /></a>
+
+        Portfolio's exposure to 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{e}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{e}" title="\mathbf{e}" /></a>
+        , 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;e_P=\sum_nh_{P,n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;e_P=\sum_nh_{P,n}" title="e_P=\sum_nh_{P,n}" /></a>
+        , measures the extent of its investment. If 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;e_P=1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;e_P=1" title="e_P=1" /></a>
+        , then the portfolio is *fully invested*.
+
+        **Portfolio C = the minimum-risk fully invested portfolio**:
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\mathbf{h}_C=\frac{\mathbf{V}^{-1}\mathbf{e}}{\mathbf{e}^T\mathbf{V}^{-1}\mathbf{e}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\mathbf{h}_C=\frac{\mathbf{V}^{-1}\mathbf{e}}{\mathbf{e}^T\mathbf{V}^{-1}\mathbf{e}}" title="\mathbf{h}_C=\frac{\mathbf{V}^{-1}\mathbf{e}}{\mathbf{e}^T\mathbf{V}^{-1}\mathbf{e}}" /></a>
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\sigma_C^2=\frac{1}{\mathbf{e}^T\mathbf{V}^{-1}\mathbf{e}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\sigma_C^2=\frac{1}{\mathbf{e}^T\mathbf{V}^{-1}\mathbf{e}}" title="\sigma_C^2=\frac{1}{\mathbf{e}^T\mathbf{V}^{-1}\mathbf{e}}" /></a>
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\mathbf{e}=\frac{\mathbf{Vh}_C}{\sigma_C^2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\mathbf{e}=\frac{\mathbf{Vh}_C}{\sigma_C^2}" title="\mathbf{e}=\frac{\mathbf{Vh}_C}{\sigma_C^2}" /></a>
+        , which indicates that every asset has a beta of 1 with respect to C.
+
+        Indication behind is that 
+        - each asset's marginal contribution to porfolio risk is proportional to its beta with respect to the portfolio.
+        - since portfolio C is the minimum-risk portfolio, each asset must have identical marginal contribution to risk. 
+        - otherwise we could trade assets to reduce portfolio risk.
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\sigma_{P,C}=e_P\sigma_C^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\sigma_{P,C}=e_P\sigma_C^2" title="\sigma_{P,C}=e_P\sigma_C^2" /></a>
+        , any fully invested portfolio's covariance with C is 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\sigma_C^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\sigma_C^2" title="\sigma_C^2" /></a> .
+
+    - **Portfolio B**
+
+        Attribute : 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\boldsymbol{\beta}=\frac{\mathbf{Vh}_B}{\sigma_B^2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\boldsymbol{\beta}=\frac{\mathbf{Vh}_B}{\sigma_B^2}" title="\boldsymbol{\beta}=\frac{\mathbf{Vh}_B}{\sigma_B^2}" /></a>
+         , B is some benchmark portfolio.
+
+        Obviously, the beta of benchmark portfolio B is 1: 
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\beta_B=\boldsymbol{\beta}^T\mathbf{h}_B=1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\beta_B=\boldsymbol{\beta}^T\mathbf{h}_B=1" title="\beta_B=\boldsymbol{\beta}^T\mathbf{h}_B=1" /></a>
+
+        Portfolio B = Characteristic portfolio of beta = The benchmark : 
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\mathbf{h}_B=\frac{\mathbf{V}^{-1}\boldsymbol{\beta}}{\boldsymbol{\beta}^T\mathbf{V}^{-1}\boldsymbol{\beta}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\mathbf{h}_B=\frac{\mathbf{V}^{-1}\boldsymbol{\beta}}{\boldsymbol{\beta}^T\mathbf{V}^{-1}\boldsymbol{\beta}}" title="\mathbf{h}_B=\frac{\mathbf{V}^{-1}\boldsymbol{\beta}}{\boldsymbol{\beta}^T\mathbf{V}^{-1}\boldsymbol{\beta}}" /></a>
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\sigma_B^2=\frac{1}{\boldsymbol{\beta}^T\mathbf{V}^{-1}\boldsymbol{\beta}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\sigma_B^2=\frac{1}{\boldsymbol{\beta}^T\mathbf{V}^{-1}\boldsymbol{\beta}}" title="\sigma_B^2=\frac{1}{\boldsymbol{\beta}^T\mathbf{V}^{-1}\boldsymbol{\beta}}" /></a>
+
+        Then benchmark is the minimum-risk portfolio with a beta of 1.
+
+        The relationship between portfolios B and C is 
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\sigma_{B,C}=e_B\sigma_C^2=\beta_C\sigma_B^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\sigma_{B,C}=e_B\sigma_C^2=\beta_C\sigma_B^2" title="\sigma_{B,C}=e_B\sigma_C^2=\beta_C\sigma_B^2" /></a>
+
+    - **Portfolio q**
+
+        Attribute : the expected excess return 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\mathbf{f}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\mathbf{f}" title="\mathbf{f}" /></a>
+
+        Sharpe ratio is the expected excess return on portfolio P divided by its risk : 
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\textup{SR}_P=\frac{f_p}{\sigma_P}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\textup{SR}_P=\frac{f_p}{\sigma_P}" title="\textup{SR}_P=\frac{f_p}{\sigma_P}" /></a>
+
+        Portfolio q :
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\mathbf{h}_q=\frac{\mathbf{V}^{-1}\mathbf{f}}{\mathbf{f}^T\mathbf{V}^{-1}\mathbf{f}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\mathbf{h}_q=\frac{\mathbf{V}^{-1}\mathbf{f}}{\mathbf{f}^T\mathbf{V}^{-1}\mathbf{f}}" title="\mathbf{h}_q=\frac{\mathbf{V}^{-1}\mathbf{f}}{\mathbf{f}^T\mathbf{V}^{-1}\mathbf{f}}" /></a>
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;f_q=\mathbf{f}^T\mathbf{h}_q=1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;f_q=\mathbf{f}^T\mathbf{h}_q=1" title="f_q=\mathbf{f}^T\mathbf{h}_q=1" /></a>
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\sigma_q^2=\frac{1}{\mathbf{f}^T\mathbf{V}^{-1}\mathbf{f}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\sigma_q^2=\frac{1}{\mathbf{f}^T\mathbf{V}^{-1}\mathbf{f}}" title="\sigma_q^2=\frac{1}{\mathbf{f}^T\mathbf{V}^{-1}\mathbf{f}}" /></a>
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{f}=\frac{\mathbf{Vh}_q}{\sigma_q^2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{f}=\frac{\mathbf{Vh}_q}{\sigma_q^2}" title="\mathbf{f}=\frac{\mathbf{Vh}_q}{\sigma_q^2}" /></a>
+
+    - Proposition 2 : Portfolio with the max Sharpe Ratio
+
+        1. **Portfolio q is the portfolio with the max Sharpe Ratio**.
+        
+            <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\textup{SR}_q=\max&space;\left&space;\{&space;\textup{SR}_P|P&space;\right&space;\}=\left&space;(&space;\mathbf{f}^T\mathbf{V}^{-1}\mathbf{f}&space;\right&space;)^{\frac{1}{2}}=\frac{1}{\sigma_q}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\textup{SR}_q=\max&space;\left&space;\{&space;\textup{SR}_P|P&space;\right&space;\}=\left&space;(&space;\mathbf{f}^T\mathbf{V}^{-1}\mathbf{f}&space;\right&space;)^{\frac{1}{2}}=\frac{1}{\sigma_q}" title="\textup{SR}_q=\max \left \{ \textup{SR}_P|P \right \}=\left ( \mathbf{f}^T\mathbf{V}^{-1}\mathbf{f} \right )^{\frac{1}{2}}=\frac{1}{\sigma_q}" /></a>
+
+        2. If <a href="https://www.codecogs.com/eqnedit.php?latex=\rho_{P,q}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\rho_{P,q}" title="\rho_{P,q}" /></a>
+         is the correlation between P and q, then
+
+            <a href="https://www.codecogs.com/eqnedit.php?latex=\textup{SR}_P=\rho_{P,q}\textup{SR}_q" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{SR}_P=\rho_{P,q}\textup{SR}_q" title="\textup{SR}_P=\rho_{P,q}\textup{SR}_q" /></a>
+        
+        3. The fraction of q invested in risky assets is
+
+            <a href="https://www.codecogs.com/eqnedit.php?latex=e_q&space;=&space;\frac{f_c\sigma_q^2}{\sigma_C^2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e_q&space;=&space;\frac{f_c\sigma_q^2}{\sigma_C^2}" title="e_q = \frac{f_c\sigma_q^2}{\sigma_C^2}" /></a>
+
+    - Portfolio A
+
+        Attribute : <a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{\alpha}&space;=&space;\mathbf{f}-\boldsymbol{\beta}f_B" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\alpha}&space;=&space;\mathbf{f}-\boldsymbol{\beta}f_B" title="\boldsymbol{\alpha} = \mathbf{f}-\boldsymbol{\beta}f_B" /></a>
+
+        Portfolio A involve significant leverage.
+
+        We can express Portfolio A in terms of Portfolio B and Portfolio q.
+
+        **The Benchmark, i.e. Portfolio B has zero alpha**, since
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha_B=\boldsymbol{\alpha}^T\mathbf{h}_B=\mathbf{f}^T\mathbf{h}_B-\boldsymbol{\beta}\mathbf{h}_B\cdot&space;f_B=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha_B=\boldsymbol{\alpha}^T\mathbf{h}_B=\mathbf{f}^T\mathbf{h}_B-\boldsymbol{\beta}\mathbf{h}_B\cdot&space;f_B=0" title="\alpha_B=\boldsymbol{\alpha}^T\mathbf{h}_B=\mathbf{f}^T\mathbf{h}_B-\boldsymbol{\beta}\mathbf{h}_B\cdot f_B=0" /></a>
+
+        **Portfolio A has zero beta, and A and B are uncorrelated**, since
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma_{B,A}=\alpha_B\sigma_A^2=\beta_A\sigma_B^2\,\,\Rightarrow\,\,&space;\beta_A=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sigma_{B,A}=\alpha_B\sigma_A^2=\beta_A\sigma_B^2\,\,\Rightarrow\,\,&space;\beta_A=0" title="\sigma_{B,A}=\alpha_B\sigma_A^2=\beta_A\sigma_B^2\,\,\Rightarrow\,\, \beta_A=0" /></a>
+
+    - Portfolio Q
+
+        Assume that Portfolio C has positive expected excess return : 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=f_C>0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_C>0" title="f_C>0" /></a> 
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\Rightarrow" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Rightarrow" title="\Rightarrow" /></a>
+         Portfolio q is net long : 
+        <a href="https://www.codecogs.com/eqnedit.php?latex=e_q>0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e_q>0" title="e_q>0" /></a>
+
+        Attribute : <a href="https://www.codecogs.com/eqnedit.php?latex=e_q\mathbf{f}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e_q\mathbf{f}" title="e_q\mathbf{f}" /></a>
+
+        Portfolio Q is *fully invested*, with holdings 
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}_Q=\mathbf{h}_q/e_q" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}_Q=\mathbf{h}_q/e_q" title="\mathbf{h}_Q=\mathbf{h}_q/e_q" /></a>
+    
+        Sharpe Ratio of Portfolio Q and q are the same: 
+
+        <a href="https://www.codecogs.com/eqnedit.php?latex=\textup{SR}_Q=\textup{SR}_q" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{SR}_Q=\textup{SR}_q" title="\textup{SR}_Q=\textup{SR}_q" /></a>
+
+    - Proposition 3
+
+        1. For any portfolio P with a correlation <a href="https://www.codecogs.com/eqnedit.php?latex=\rho_{P,Q}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\rho_{P,Q}" title="\rho_{P,Q}" /></a>  with portfolio Q, we have
+
+            <a href="https://www.codecogs.com/eqnedit.php?latex=\textup{SR}_P=\rho_{P,Q}\textup{SR}_Q" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{SR}_P=\rho_{P,Q}\textup{SR}_Q" title="\textup{SR}_P=\rho_{P,Q}\textup{SR}_Q" /></a>
+
+        2. How portfolio Q "explains" expected returns:
+
+            <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{f}=f_Q\boldsymbol{\beta}_{\textup{with&space;respect&space;to&space;}&space;Q}=f_Q\cdot&space;\frac{\mathbf{Vh}_Q}{\sigma_Q^2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{f}=f_Q\boldsymbol{\beta}_{\textup{with&space;respect&space;to&space;}&space;Q}=f_Q\cdot&space;\frac{\mathbf{Vh}_Q}{\sigma_Q^2}" title="\mathbf{f}=f_Q\boldsymbol{\beta}_{\textup{with respect to } Q}=f_Q\cdot \frac{\mathbf{Vh}_Q}{\sigma_Q^2}" /></a>
+
+        3.
+
+        4.
+
+    - Partial List of Characteristic Portfolios
+
+        |Characteristic|Portfolio|Comments|
+        |:-:|:-:|:-:|
+        |<a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{e}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{e}" title="\mathbf{e}" /></a>|<a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}_C" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}_C" title="\mathbf{h}_C" /></a>|-
+        |<a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{\beta}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\beta}" title="\boldsymbol{\beta}" /></a>|<a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}_B" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}_B" title="\mathbf{h}_B" /></a>|-
+        |<a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{f}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{f}" title="\mathbf{f}" /></a>|<a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}_q" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}_q" title="\mathbf{h}_q" /></a>|-
+        |<a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{\alpha}&space;=&space;\mathbf{f}-\boldsymbol{\beta}f_B" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\alpha}&space;=&space;\mathbf{f}-\boldsymbol{\beta}f_B" title="\boldsymbol{\alpha} = \mathbf{f}-\boldsymbol{\beta}f_B" /></a>|<a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}_A" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}_A" title="\mathbf{h}_A" /></a>|-
+        |<a href="https://www.codecogs.com/eqnedit.php?latex=e_q\mathbf{f}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?e_q\mathbf{f}" title="e_q\mathbf{f}" /></a>|<a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}_Q" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}_Q" title="\mathbf{h}_Q" /></a>|<a href="https://www.codecogs.com/eqnedit.php?latex=f_C>0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f_C>0" title="f_C>0" /></a>
+
+            
+### The Efficient Frontier
+
+- Two fully invested characteristic portfolios : 
+    - Portfolio C
+    - Portfolio Q
+
+- A fully invested portfolio is **efficient** if it has minimum risk with the same expected return :
+
+    <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{align*}&space;\min&space;_{\mathbf{h}}&space;&\,\,&space;\frac{\mathbf{h}^T\mathbf{Vh}}{2}\\&space;\textup{s.t.}&space;&\,\,\mathbf{e}^T\mathbf{h}=1&space;\\&space;&&space;\,\,\mathbf{f}^T\mathbf{h}=f_P&space;\end{align*}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{align*}&space;\min&space;_{\mathbf{h}}&space;&\,\,&space;\frac{\mathbf{h}^T\mathbf{Vh}}{2}\\&space;\textup{s.t.}&space;&\,\,\mathbf{e}^T\mathbf{h}=1&space;\\&space;&&space;\,\,\mathbf{f}^T\mathbf{h}=f_P&space;\end{align*}" title="\begin{align*} \min _{\mathbf{h}} &\,\, \frac{\mathbf{h}^T\mathbf{Vh}}{2}\\ \textup{s.t.} &\,\,\mathbf{e}^T\mathbf{h}=1 \\ & \,\,\mathbf{f}^T\mathbf{h}=f_P \end{align*}" /></a>
+
+- Efficient frontier portfolios are weighted combinations of Portfolio C and Portfolio Q :
+
+    <a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{h}_P=\left&space;(&space;\frac{f_Q-f_P}{f_Q-f_C}&space;\right&space;)\mathbf{h}_C&plus;\left&space;(&space;\frac{f_P-f_C}{f_Q-f_C}&space;\right&space;)\mathbf{h}_Q" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{h}_P=\left&space;(&space;\frac{f_Q-f_P}{f_Q-f_C}&space;\right&space;)\mathbf{h}_C&plus;\left&space;(&space;\frac{f_P-f_C}{f_Q-f_C}&space;\right&space;)\mathbf{h}_Q" title="\mathbf{h}_P=\left ( \frac{f_Q-f_P}{f_Q-f_C} \right )\mathbf{h}_C+\left ( \frac{f_P-f_C}{f_Q-f_C} \right )\mathbf{h}_Q" /></a>
+
+### Capital Asset Pricing Model
+
+- Portolio Q is the market portfolio M.
+
+- The market portfolio M is the portfolio with the highest ratio of expected excess return to risk.
+
 
