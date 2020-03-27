@@ -7,7 +7,7 @@
 - 算术类型（arithmetic type）分两类
     - 整型（integral type）
         - **字符** 和 **布尔类型**
-        - 其他整形（见 <a name="signed">带符号类型和无符号类型</a>）
+        - 其他整形（见 [带符号类型和无符号类型](#unsigned)）
     - 浮点型
 
 - 算术类型的尺寸（即数据所占 **byte** 数量）在不同机器上有所差别。
@@ -37,7 +37,7 @@
     `double`| 10位有效数字 | `double` = 2 words = 8 bytes = 64 bits
     `long double`|10位有效数字 |`long double` = 3(or 4) words = 12(or 16) bytes = 96(or 128) bits
 
-- [带符号类型和无符号类型](#signed)
+- <a name="unsigned">带符号类型和无符号类型</a>
     - a
 
 
