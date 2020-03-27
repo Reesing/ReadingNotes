@@ -38,6 +38,49 @@
     `long double`|10位有效数字 |`long double` = 3(or 4) words = 12(or 16) bytes = 96(or 128) bits
 
 - <a name="unsigned">带符号类型和无符号类型</a>
-    - a
+    - 其他整形
+        - 带符号的 signed
+            - 可以表示正数、负数或0
+            - `int`，`short`，`long`，`long long`
+        - 无符号的 unsigned
+            - 仅能表示大于等于0的值
+            - `unsigned int`（可缩写为 `unsigned`），`unsigned short`，`unsigned long`，`unsigned long long`
+    - 字符型
+        - `char`
+            - `char` != `signed char`
+        - `signed char`
+        - `unsigned char`
+    - 如何选择类型？
+        - C++ 的设计准则之一是**尽可能地接近硬件**
+        - 当明确知道不可能为负时，用 unsigned
+        - 在算术表达式中，不要使用 `bool` 或 `char`
+            - 因为随机器不同，`char` 类型有可能是 signed，也可能是 unsigned，进行运算特别容易出问题
+        - 执行浮点数运算用 `double`
 
+### 2.1.2 类型转换
 
+- 若使用了一种类型而其实应取另一种类型时，程序会自动进行类型转换。类型所能表示的值的范围决定了转换的过程
+    ```cpp
+    // 以下假设 char 占 8 bits
+    unsigned char c = -1; //unsigned char 取值范围为 0~255，因此c的值为255
+    signed char c2 = 256; // signed char 取值范围为 -127~127, 因此 c2 的值未定义
+    ```
+    - 当赋给 unsigned 类型一个超出表示范围的值时，结果是初始值对 unsigned 类型表示**数值总数取模后的余数**
+    - 当赋给 signed 类型一个起来表示范围的值时，结果是**未定义的**（undefined），程序可能继续工作，或崩溃，或生成垃圾数据
+
+- 含有无符号类型的表达式
+    - **算术表达式中既有 unsigned 数又有 `int` 时，`int` 值会转换为 unsigned**
+        ```cpp
+        // 假设 int 占 32 bits
+        unsigned u = 10;
+        int i = -42;
+        cout << i + i << endl; // 输出 -84, 正常
+        cout << u + i << endl; // 输出 4294967264 = (2^32-42) + 10
+        ```
+    
+    - 若从 unsigned 中减去一个数时，必须确保结果非负，否则会取模
+        - **会关系到循环的写法！**
+
+    - 不要滥用 unsigned 和 signed 类型！
+
+### 2.1.3 字面值常量（literal）
